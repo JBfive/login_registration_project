@@ -1,0 +1,38 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#main{
+	width: 800px;
+	height: 700px;
+	background-color: grey;
+
+}
+.container{
+	width: 358px;
+	height: 600px;
+	background-color: lightblue;
+	display: inline-block;
+	vertical-align: top;
+	margin: 20px;
+}
+.messages{
+	color: red;
+}
+.welcome{
+	width: 420px;
+	display: inline-block;
+	vertical-align: top;
+}
+.buttons{
+	width: 345px;
+	margin: 28px 10px;
+	
+	text-align: right;
+	display: inline-block;
+	
+}
+.buttons form {
+	display: inline-block;
+}
