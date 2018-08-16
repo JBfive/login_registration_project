@@ -46,13 +46,13 @@ class UserManager(models.Manager):
 		if bcrypt.checkpw(postData['password'].encode(), user[0].password.encode()):
 			print("password match")
 			result = {'return': user[0].id, 'status': True}
-			return result
+			
 		else:
 			print("failed password")
 			errors['login']= "Failed to login"
 			if len(errors):
 				result = {'return': errors, 'status': False}
-				return result
+		return result		
 
 class User(models.Model):
 	first_name= models.CharField(max_length=255)
